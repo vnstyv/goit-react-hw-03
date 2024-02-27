@@ -46,7 +46,7 @@ export const App = () => {
     return (
     <div>
       <h1 className={css.title}>Phonebook</h1>
-      <ContactForm onAdd={addContact} />
+      <ContactForm onAdd={addContacts} />
       <SearchBox value={search} onInput={setSearch} />
       {contacts.length !== 0 ? (
         <ContactList contactsInfo={filteredContact} onDelete={deleteContact} />
