@@ -7,7 +7,7 @@ export const ContactList = ({ contactsInfo, onDelete }) => {
     return (
         <ul className={css.contactList}>
             {contactsInfo.map((item) => (
-            <li key={nanoid()} className={css.contactListItem}>
+            <li key={item.id} className={css.contactListItem}>
                 <Contact contacts={item} onDelete={onDelete}/>
             </li>
             ))}
